@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-
+use Database\Seeders\DatabaseSeeder;
 
 return new class extends Migration
 {
@@ -21,11 +21,13 @@ return new class extends Migration
             $table->string('Name');
             $table->integer('Fk_department');
             $table->integer('Fk_designation');
-            $table->integer('Phone_number');
+            $table->string('Phone_number')->length(10);
             $table->timestamp('Created_at');
         });
 
-        
+        $seeder = new DatabaseSeeder();
+        $seeder->run();
+
 
 
          // Query Builder approach
