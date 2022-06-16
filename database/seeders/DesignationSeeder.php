@@ -21,7 +21,7 @@ class DesignationSeeder extends Seeder
             ['id' => 2, 'name' => 'Mobile Application Development', 'Created_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['id' => 3, 'name' => 'Web Application Development', 'Created_at' => Carbon::now()->format('Y-m-d H:i:s')],
             ['id' => 4, 'name' => 'IT engineering and engineering management', 'Created_at' => Carbon::now()->format('Y-m-d H:i:s')],
-            ['id' => 5, 'name' => 'Marketing', 'Created_at' => Carbon::now()->format('Y-m-d H:i:s')],
+            ['id' => 5, 'name' => 'Graphic Designing', 'Created_at' => Carbon::now()->format('Y-m-d H:i:s')],
         ];
 
         $designation = Designation::insert($designations);
